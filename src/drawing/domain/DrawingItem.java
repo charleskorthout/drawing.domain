@@ -4,9 +4,7 @@
  * and open the template in the editor.
  */
 package drawing.domain;
-import java.util.*;
 import java.awt.*;
-import java.math.*;
 
 /**
  *
@@ -18,20 +16,34 @@ public class DrawingItem {
     private Point anchor;
     private DrawingItem previousState = null;
 
+    /**
+     * Default constructor
+     */
     public DrawingItem(){
         
     }
-            
+    
+    /**
+     * Get the color of the drawing item
+     * @return the Color of the drawing item
+     */
     public Color getColor() {
         return color;
     }
 
-    
+    /**
+     * Set the color of the drawing item
+     * @param color the color of the drawing item
+     */
     public void setColor(Color color) {
         this.save();
         this.color = color;
     }
 
+    /**
+     * Get the anchor point (left top) of the drawing 
+     * @return the anchor point of the drawing
+     */
     public Point getAnchor() {
         return anchor;
     }
@@ -48,6 +60,7 @@ public class DrawingItem {
     /**
      * 
      * returns to the previous state 
+     * @return the previous state of the drawing item
      */
     public DrawingItem previousState() { 
         if (this.previousState != null){

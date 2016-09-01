@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="4" hostname="IANDTS-WIN10" name="drawing.domain.PolygonTest" skipped="0" tests="4" time="0.139" timestamp="2016-09-01T16:38:10">
+<testsuite errors="0" failures="0" hostname="IANDTS-WIN10" name="drawing.domain.PolygonTest" skipped="0" tests="4" time="0.121" timestamp="2016-09-01T21:30:45">
   <properties>
     <property name="netbeans.autoupdate.country" value="US" />
     <property name="nb.wait.for.caches" value="true" />
@@ -26,6 +26,7 @@
     <property name="libs.hamcrest.classpath" value="C:\Program Files\NetBeans 8.1\platform\modules\ext\hamcrest-core-1.3.jar" />
     <property name="libs.javac-api.javadoc" value="" />
     <property name="os.name" value="Windows 10" />
+    <property name="com.sun.security.enableCRLDP" value="true" />
     <property name="libs.beans-binding.classpath" value="C:\Program Files\NetBeans 8.1\java\modules\ext\beansbinding-1.2.1.jar" />
     <property name="ap.proc.none.internal" value="" />
     <property name="libs.JWSAntTasks.maven-pom" value="" />
@@ -37,7 +38,7 @@
     <property name="user.name" value="charl" />
     <property name="copylibs.rebase" value="true" />
     <property name="libs.swing-layout.maven-pom" value="" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner drawing.domain.PolygonTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\charl\Documents\NetBeansProjects\Fontys\Drawing.Domain\build\test\results\TEST-drawing.domain.PolygonTest.xml crashfile=C:\Users\charl\Documents\NetBeansProjects\Fontys\Drawing.Domain\build\junitvmwatcher3987911373166218977.properties propsfile=C:\Users\charl\Documents\NetBeansProjects\Fontys\Drawing.Domain\build\junit8348306692371001124.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner drawing.domain.PolygonTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\charl\Documents\NetBeansProjects\Fontys\Drawing.Domain\build\test\results\TEST-drawing.domain.PolygonTest.xml crashfile=C:\Users\charl\Documents\NetBeansProjects\Fontys\Drawing.Domain\build\junitvmwatcher7039956197293200855.properties propsfile=C:\Users\charl\Documents\NetBeansProjects\Fontys\Drawing.Domain\build\junit670559843941035034.properties" />
     <property name="build.classes.dir" value="build/classes" />
     <property name="netbeans.accept_license_class" value="org.netbeans.license.AcceptLicense" />
     <property name="build.sysclasspath" value="ignore" />
@@ -153,6 +154,7 @@
     <property name="javac.processorpath" value="" />
     <property name="libs.hamcrest.maven-pom" value="" />
     <property name="javac.compilerargs" value="" />
+    <property name="svnkit.http.methods" value="Basic" />
     <property name="ant.file" value="C:\Users\charl\Documents\NetBeansProjects\Fontys\Drawing.Domain\build.xml" />
     <property name="libs.beans-binding.maven-pom" value="" />
     <property name="libs.hibernate4-support.javadoc" value="C:\Program Files\NetBeans 8.1\java\modules\ext\docs\javax.persistence-2.1.0-doc.zip" />
@@ -162,7 +164,6 @@
     <property name="org.openide.major.version" value="IDE/1" />
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
     <property name="netbeans.user" value="C:\Users\charl\AppData\Roaming\NetBeans\8.1" />
-    <property name="tests.failed" value="true" />
     <property name="javadoc.additionalparam" value="" />
     <property name="java.io.tmpdir" value="C:\Users\charl\AppData\Local\Temp\" />
     <property name="java.vendor.url" value="http://java.oracle.com/" />
@@ -296,28 +297,11 @@
     <property name="platform.active" value="default_platform" />
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
   </properties>
-  <testcase classname="drawing.domain.PolygonTest" name="testToString" time="0.017">
-    <failure message="expected:&lt;[]&gt; but was:&lt;[class Polygon; weight {0}]&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;[]&gt; but was:&lt;[class Polygon; weight {0}]&gt;
-	at drawing.domain.PolygonTest.testToString(PolygonTest.java:92)
-</failure>
-  </testcase>
-  <testcase classname="drawing.domain.PolygonTest" name="testGetVertices" time="0.004">
-    <failure message="The test case is a prototype." type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: The test case is a prototype.
-	at drawing.domain.PolygonTest.testGetVertices(PolygonTest.java:53)
-</failure>
-  </testcase>
-  <testcase classname="drawing.domain.PolygonTest" name="testSetWeight" time="0.006">
-    <failure message="The test case is a prototype." type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: The test case is a prototype.
-	at drawing.domain.PolygonTest.testSetWeight(PolygonTest.java:80)
-</failure>
-  </testcase>
-  <testcase classname="drawing.domain.PolygonTest" name="testGetWeight" time="0.001">
-    <failure message="The test case is a prototype." type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: The test case is a prototype.
-	at drawing.domain.PolygonTest.testGetWeight(PolygonTest.java:67)
-</failure>
-  </testcase>
-  <system-out><![CDATA[toString
-getVertices
+  <testcase classname="drawing.domain.PolygonTest" name="testToString" time="0.001" />
+  <testcase classname="drawing.domain.PolygonTest" name="testGetVertices" time="0.001" />
+  <testcase classname="drawing.domain.PolygonTest" name="testSetWeight" time="0.0" />
+  <testcase classname="drawing.domain.PolygonTest" name="testGetWeight" time="0.0" />
+  <system-out><![CDATA[getVertices
 setWeight
 getWeight
 ]]></system-out>

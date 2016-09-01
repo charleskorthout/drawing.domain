@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="5" hostname="IANDTS-WIN10" name="drawing.domain.ImageTest" skipped="0" tests="5" time="0.69" timestamp="2016-09-01T16:38:08">
+<testsuite errors="0" failures="0" hostname="IANDTS-WIN10" name="drawing.domain.ImageTest" skipped="0" tests="5" time="0.126" timestamp="2016-09-01T21:30:43">
   <properties>
     <property name="netbeans.autoupdate.country" value="US" />
     <property name="nb.wait.for.caches" value="true" />
@@ -26,6 +26,7 @@
     <property name="libs.hamcrest.classpath" value="C:\Program Files\NetBeans 8.1\platform\modules\ext\hamcrest-core-1.3.jar" />
     <property name="libs.javac-api.javadoc" value="" />
     <property name="os.name" value="Windows 10" />
+    <property name="com.sun.security.enableCRLDP" value="true" />
     <property name="libs.beans-binding.classpath" value="C:\Program Files\NetBeans 8.1\java\modules\ext\beansbinding-1.2.1.jar" />
     <property name="ap.proc.none.internal" value="" />
     <property name="libs.JWSAntTasks.maven-pom" value="" />
@@ -37,7 +38,7 @@
     <property name="user.name" value="charl" />
     <property name="copylibs.rebase" value="true" />
     <property name="libs.swing-layout.maven-pom" value="" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner drawing.domain.ImageTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\charl\Documents\NetBeansProjects\Fontys\Drawing.Domain\build\test\results\TEST-drawing.domain.ImageTest.xml crashfile=C:\Users\charl\Documents\NetBeansProjects\Fontys\Drawing.Domain\build\junitvmwatcher2290404701562170658.properties propsfile=C:\Users\charl\Documents\NetBeansProjects\Fontys\Drawing.Domain\build\junit4413005182988696799.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner drawing.domain.ImageTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\charl\Documents\NetBeansProjects\Fontys\Drawing.Domain\build\test\results\TEST-drawing.domain.ImageTest.xml crashfile=C:\Users\charl\Documents\NetBeansProjects\Fontys\Drawing.Domain\build\junitvmwatcher1381588009280068165.properties propsfile=C:\Users\charl\Documents\NetBeansProjects\Fontys\Drawing.Domain\build\junit6178873037339782786.properties" />
     <property name="build.classes.dir" value="build/classes" />
     <property name="netbeans.accept_license_class" value="org.netbeans.license.AcceptLicense" />
     <property name="build.sysclasspath" value="ignore" />
@@ -153,6 +154,7 @@
     <property name="javac.processorpath" value="" />
     <property name="libs.hamcrest.maven-pom" value="" />
     <property name="javac.compilerargs" value="" />
+    <property name="svnkit.http.methods" value="Basic" />
     <property name="ant.file" value="C:\Users\charl\Documents\NetBeansProjects\Fontys\Drawing.Domain\build.xml" />
     <property name="libs.beans-binding.maven-pom" value="" />
     <property name="libs.hibernate4-support.javadoc" value="C:\Program Files\NetBeans 8.1\java\modules\ext\docs\javax.persistence-2.1.0-doc.zip" />
@@ -162,7 +164,6 @@
     <property name="org.openide.major.version" value="IDE/1" />
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
     <property name="netbeans.user" value="C:\Users\charl\AppData\Roaming\NetBeans\8.1" />
-    <property name="tests.failed" value="true" />
     <property name="javadoc.additionalparam" value="" />
     <property name="java.io.tmpdir" value="C:\Users\charl\AppData\Local\Temp\" />
     <property name="java.vendor.url" value="http://java.oracle.com/" />
@@ -296,33 +297,12 @@
     <property name="platform.active" value="default_platform" />
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
   </properties>
-  <testcase classname="drawing.domain.ImageTest" name="testToString" time="0.371">
-    <failure message="expected:&lt;[]&gt; but was:&lt;[class Image; file = {0}, sizew = {1} ]&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;[]&gt; but was:&lt;[class Image; file = {0}, sizew = {1} ]&gt;
-	at drawing.domain.ImageTest.testToString(ImageTest.java:103)
-</failure>
-  </testcase>
-  <testcase classname="drawing.domain.ImageTest" name="testGetFile" time="0.004">
-    <failure message="expected:&lt;&gt; but was:&lt;null&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;&gt; but was:&lt;null&gt;
-	at drawing.domain.ImageTest.testGetFile(ImageTest.java:49)
-</failure>
-  </testcase>
-  <testcase classname="drawing.domain.ImageTest" name="testGetSize" time="0.005">
-    <failure message="The test case is a prototype." type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: The test case is a prototype.
-	at drawing.domain.ImageTest.testGetSize(ImageTest.java:78)
-</failure>
-  </testcase>
-  <testcase classname="drawing.domain.ImageTest" name="testSetFile" time="0.001">
-    <failure message="The test case is a prototype." type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: The test case is a prototype.
-	at drawing.domain.ImageTest.testSetFile(ImageTest.java:64)
-</failure>
-  </testcase>
-  <testcase classname="drawing.domain.ImageTest" name="testSetSize" time="0.003">
-    <failure message="The test case is a prototype." type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: The test case is a prototype.
-	at drawing.domain.ImageTest.testSetSize(ImageTest.java:91)
-</failure>
-  </testcase>
-  <system-out><![CDATA[toString
-getFile
+  <testcase classname="drawing.domain.ImageTest" name="testToString" time="0.001" />
+  <testcase classname="drawing.domain.ImageTest" name="testGetFile" time="0.002" />
+  <testcase classname="drawing.domain.ImageTest" name="testGetSize" time="0.0" />
+  <testcase classname="drawing.domain.ImageTest" name="testSetFile" time="0.002" />
+  <testcase classname="drawing.domain.ImageTest" name="testSetSize" time="0.0" />
+  <system-out><![CDATA[getFile
 getSize
 setFile
 setSize

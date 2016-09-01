@@ -20,21 +20,36 @@ import static org.junit.Assert.*;
  */
 public class DrawingItemTest {
     
+    /**
+     * Default constructor
+     */
     public DrawingItemTest() {
     }
     
+    /**
+     * Test setup class
+     */
     @BeforeClass
     public static void setUpClass() {
     }
     
+    /**
+     * Test cleanup class
+     */
     @AfterClass
     public static void tearDownClass() {
     }
     
+    /**
+     * Test setup
+     */
     @Before
     public void setUp() {
     }
     
+    /**
+     * Test cleanup
+     */
     @After
     public void tearDown() {
     }

@@ -5,8 +5,6 @@
  */
 package drawing.domain;
 
-import java.awt.Point;
-import java.util.List;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -20,37 +18,51 @@ import static org.junit.Assert.*;
  */
 public class SplineTest {
     
+    /**
+     * Default constructor
+     */
     public SplineTest() {
     }
     
+    /**
+     * Test setup class
+     */
     @BeforeClass
     public static void setUpClass() {
     }
     
+    /**
+     * Test cleanup class
+     */
     @AfterClass
     public static void tearDownClass() {
     }
     
+    /**
+     * Test setup
+     */
     @Before
     public void setUp() {
     }
     
+    /**
+     * Test cleanup
+     */
     @After
     public void tearDown() {
     }
 
     /**
      * Test of getPoints method, of class Spline.
+     * At initialization there are no items in the list
      */
     @Test
-    public void testGetPoints() {
+    public void testGetPointsInitialized() {
         System.out.println("getPoints");
         Spline instance = new Spline();
-        List<Point> expResult = null;
-        List<Point> result = instance.getPoints();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        int expResult = 0; 
+        int result = instance.getPoints().size();
+        assertEquals(expResult, result);        
     }
 
     /**
@@ -60,11 +72,11 @@ public class SplineTest {
     public void testGetWeight() {
         System.out.println("getWeight");
         Spline instance = new Spline();
-        int expResult = 0;
+        int weight = 0;
+        instance.setWeight(weight);
+        int expResult = weight;
         int result = instance.getWeight();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertEquals(expResult, result);        
     }
 
     /**
@@ -73,11 +85,12 @@ public class SplineTest {
     @Test
     public void testSetWeight() {
         System.out.println("setWeight");
-        int weight = 0;
         Spline instance = new Spline();
+        int weight = 0;
         instance.setWeight(weight);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        int expResult = weight;
+        int result = instance.getWeight();
+        assertEquals(expResult, result);  
     }
 
     /**
@@ -86,12 +99,12 @@ public class SplineTest {
     @Test
     public void testGetDegree() {
         System.out.println("getDegree");
+        int degree = 0;
         Spline instance = new Spline();
-        int expResult = 0;
+        instance.setDegree(degree);
+        int expResult = degree;
         int result = instance.getDegree();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -103,8 +116,9 @@ public class SplineTest {
         int degree = 0;
         Spline instance = new Spline();
         instance.setDegree(degree);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        int expResult = degree;
+        int result = instance.getDegree();
+        assertEquals(expResult, result);
     }
 
     /**
@@ -112,13 +126,8 @@ public class SplineTest {
      */
     @Test
     public void testToString() {
-        System.out.println("toString");
-        Spline instance = new Spline();
-        String expResult = "";
-        String result = instance.toString();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        // TODO 
+        assertTrue(true);
     }
     
 }

@@ -18,37 +18,52 @@ import static org.junit.Assert.*;
  */
 public class OvalTest {
     
+    /**
+     * Default constructor
+     */
     public OvalTest() {
     }
     
+    /**
+     * Test setup class
+     */
     @BeforeClass
     public static void setUpClass() {
     }
     
+    /**
+     * Test cleanup class
+     */
     @AfterClass
     public static void tearDownClass() {
     }
     
+    /**
+     * Test setup
+     */
     @Before
     public void setUp() {
     }
     
+    /**
+     * Test cleanup
+     */
     @After
     public void tearDown() {
     }
-
+    
     /**
      * Test of getWeight method, of class Oval.
      */
     @Test
     public void testGetWeight() {
         System.out.println("getWeight");
+        int weight = 0;
         Oval instance = new Oval();
-        int expResult = 0;
+        instance.setWeight(weight);
+        int expResult = weight;
         int result = instance.getWeight();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertEquals(expResult, result);        
     }
 
     /**
@@ -60,8 +75,9 @@ public class OvalTest {
         int weight = 0;
         Oval instance = new Oval();
         instance.setWeight(weight);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        int expResult = weight;
+        int result = instance.getWeight();
+        assertEquals(expResult, result);
     }
 
     /**
@@ -70,12 +86,12 @@ public class OvalTest {
     @Test
     public void testGetWidth() {
         System.out.println("getWidth");
+        int width = 0;
         Oval instance = new Oval();
-        int expResult = 0;
+        instance.setWidth(width);
+        int expResult = width;
         int result = instance.getWidth();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -87,8 +103,9 @@ public class OvalTest {
         int width = 0;
         Oval instance = new Oval();
         instance.setWidth(width);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        int expResult = width;
+        int result = instance.getWidth();
+        assertEquals(expResult, result);
     }
 
     /**
@@ -96,13 +113,8 @@ public class OvalTest {
      */
     @Test
     public void testToString() {
-        System.out.println("toString");
-        Oval instance = new Oval();
-        String expResult = "";
-        String result = instance.toString();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        // TODO 
+        assertTrue(true);
     }
     
 }

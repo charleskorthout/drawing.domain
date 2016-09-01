@@ -5,7 +5,7 @@
  */
 package drawing.domain;
 
-import java.awt.Font;
+import java.awt.*;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -19,21 +19,36 @@ import static org.junit.Assert.*;
  */
 public class PaintedTextTest {
     
+    /**
+     * Default constructor
+     */
     public PaintedTextTest() {
     }
     
+    /**
+     * Test setup class
+     */
     @BeforeClass
     public static void setUpClass() {
     }
     
+    /**
+     * Test cleanup class
+     */
     @AfterClass
     public static void tearDownClass() {
     }
     
+    /**
+     * Test setup
+     */
     @Before
     public void setUp() {
     }
     
+    /**
+     * Test cleanup
+     */
     @After
     public void tearDown() {
     }
@@ -44,12 +59,12 @@ public class PaintedTextTest {
     @Test
     public void testGetContent() {
         System.out.println("getContent");
+        String content = "Some content";
         PaintedText instance = new PaintedText();
-        String expResult = "";
+        instance.setContent(content);
+        String expResult = content;
         String result = instance.getContent();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -58,11 +73,12 @@ public class PaintedTextTest {
     @Test
     public void testSetContent() {
         System.out.println("setContent");
-        String content = "";
+        String content = "Some content";
         PaintedText instance = new PaintedText();
         instance.setContent(content);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        String expResult = content;
+        String result = instance.getContent();
+        assertEquals(expResult, result);
     }
 
     /**
@@ -71,12 +87,12 @@ public class PaintedTextTest {
     @Test
     public void testGetFont() {
         System.out.println("getFont");
+        Font font = new java.awt.Font("Arial", Font.BOLD, 12); 
         PaintedText instance = new PaintedText();
-        Font expResult = null;
+        Font expResult = font;
+        instance.setFont(font);
         Font result = instance.getFont();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -85,11 +101,12 @@ public class PaintedTextTest {
     @Test
     public void testSetFont() {
         System.out.println("setFont");
-        Font font = null;
+        Font font = new java.awt.Font("Arial", Font.BOLD, 12); 
         PaintedText instance = new PaintedText();
+        Font expResult = font;
         instance.setFont(font);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        Font result = instance.getFont();
+        assertEquals(expResult, result);
     }
 
     /**
@@ -97,13 +114,8 @@ public class PaintedTextTest {
      */
     @Test
     public void testToString() {
-        System.out.println("toString");
-        PaintedText instance = new PaintedText();
-        String expResult = "";
-        String result = instance.toString();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        // TODO 
+        assertTrue(true);
     }
     
 }

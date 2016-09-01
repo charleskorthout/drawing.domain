@@ -14,8 +14,14 @@ public class Drawing {
     private String name;
     private int width;
     private int height;
-    private List<DrawingItem> drawingItems;
+    private List<DrawingItem> drawingItems = null;
     
+    /**
+     * Default constructor
+     */
+    public Drawing(){
+        drawingItems = new ArrayList();
+    }
     /**
      * 
      * @return the width of the drawing
@@ -64,9 +70,13 @@ public class Drawing {
         this.name = name;
     }
     
-    // TOD Implement the collection methods
+    // TODO Implement the collection methods
+    /**
+     * Add an item to the drawing shape collection
+     * @param item The item to add to the collection
+     */
     public void append(DrawingItem item) {
-        drawingItems.add(item);
+        if (item != null) drawingItems.add(item);
     }
     
     /**
