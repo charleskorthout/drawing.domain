@@ -70,7 +70,7 @@ public class Drawing {
         this.name = name;
     }
     
-    // TODO Implement the collection methods
+    // TODO Implement the collection methods for deletion and iteration
     /**
      * Add an item to the drawing shape collection
      * @param item The item to add to the collection

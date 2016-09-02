@@ -68,7 +68,30 @@ public class Spline extends DrawingItem{
      */
     @Override
     public String toString(){
-        return String.format("class Spline; weight %d, degree = %d ", this.weight, this.degree);
+        return String.format("class Spline; weight %d, degree = %d, distance to origin %f ", this.weight, this.degree, DrawingItem.distance(this));
     }
     
+    
+    /**
+     * 
+     * @param o the object to compare to
+     * @return the logical value after compare
+     */
+    @Override
+    public boolean equals(Object o) {
+        if (o==null) return false;
+        else if (o instanceof DrawingItem) return this.compareTo((DrawingItem)o) == 0;
+        return false;
+    }
+    
+    /**
+     * 
+     * @return the hashcode of the object
+     */
+    @Override
+    public int hashCode() {
+        int result = 17;
+        result = 31 * result + this.getAnchor().hashCode();
+        return result;
+    }
 }

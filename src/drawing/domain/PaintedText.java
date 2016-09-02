@@ -60,6 +60,31 @@ public class PaintedText extends DrawingItem {
      */
     @Override
     public String toString(){
-        return String.format("class PaintedText; content %s, font = %s ", this.content, this.font.toString());
+        return String.format("class PaintedText; content %s, font = %s; distance to origin %f ", this.content, this.font.toString(), DrawingItem.distance(this));
     }
+    
+    
+    /**
+     * 
+     * @param o the object to compare to
+     * @return the logical value after compare
+     */
+    @Override
+    public boolean equals(Object o) {
+        if (o==null) return false;
+        else if (o instanceof DrawingItem) return this.compareTo((DrawingItem)o) == 0;
+        return false;
+    }
+    
+    /**
+     * 
+     * @return the hashcode of the object
+     */
+    @Override
+    public int hashCode() {
+        int result = 17;
+        result = 31 * result + this.getAnchor().hashCode();
+        return result;
+    }
+    
 }

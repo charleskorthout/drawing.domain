@@ -59,6 +59,30 @@ public class Image extends DrawingItem {
      */
     @Override
     public String toString(){
-        return String.format("class Image; file = %s, sizew = %d ", this.file, this.size);
+        return String.format("class Image; file = %s, sizew = %d, distance to source %f ", this.file, this.size, DrawingItem.distance(this));
+    }
+    
+    /**
+     * 
+     * @param o the object to compare to
+     * @return the logical value after compare
+     */
+    @Override
+    public boolean equals(Object o) {
+        if (o==null) return false;
+        else if (o instanceof DrawingItem) return this.compareTo((DrawingItem)o) == 0;
+        return false;
+    }
+    
+    /**
+     * 
+     * @return 
+     */
+    @Override
+    public int hashCode() {
+        int result = 17;
+        result = 31 * result + this.getAnchor().hashCode();
+        return result;
     }
 }
+

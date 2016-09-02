@@ -10,8 +10,8 @@ import java.awt.*;
  *
  * @author Charles Korthout
  */
-public class DrawingItem {
-    
+public class DrawingItem implements Comparable<DrawingItem>{
+
     private Color color;
     private Point anchor;
     private DrawingItem previousState = null;
@@ -20,7 +20,7 @@ public class DrawingItem {
      * Default constructor
      */
     public DrawingItem(){
-        
+        anchor = new Point(0,0);
     }
     
     /**
@@ -77,6 +77,49 @@ public class DrawingItem {
     */
     private void save(){
         this.previousState = this;
-    }    
+    }
+
+    /**
+     * static method to retrieve the distance to the origin
+     * @param di The DrawingItem
+     * @return The distance to the origin
+     */
+    protected static double distance(DrawingItem di) {
+        return Math.sqrt(Math.pow(di.getAnchor().getX(),2) + Math.pow(di.getAnchor().getY(),2));
+    }
     
+    /**
+     * Implementation of the compareto method
+     * @param di a DrawingItem to compare with
+     * @return the logical value of the compare
+     */
+    @Override
+    public int compareTo(DrawingItem di) {
+        Double dist1 = distance(this); 
+        Double dist2 = distance(di); 
+        return dist1.compareTo(dist2);        
+    }
+    
+    /**
+     * 
+     * @param o the object to compare to
+     * @return the logical value after compare
+     */
+    @Override
+    public boolean equals(Object o) {
+        if (o==null) return false;
+        else if (o instanceof DrawingItem) return this.compareTo((DrawingItem)o) == 0;
+        return false;
+    }
+    
+    /**
+     * 
+     * @return the hashcode of the object
+     */
+    @Override
+    public int hashCode() {
+        int result = 17;
+        result = 31 * result + this.getAnchor().hashCode();
+        return result;
+    }
 }

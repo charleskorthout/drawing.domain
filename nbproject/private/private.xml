@@ -5,6 +5,7 @@
         <group>
             <file>file:/C:/Users/charl/Documents/NetBeansProjects/Fontys/Drawing.Domain/test/drawing/domain/OvalTest.java</file>
             <file>file:/C:/Users/charl/Documents/NetBeansProjects/Fontys/Drawing.Domain/src/drawing/domain/DrawingItem.java</file>
+            <file>file:/C:/Users/charl/Documents/NetBeansProjects/Fontys/Drawing.Domain/test/drawing/domain/DrawingItemComparatorTest.java</file>
             <file>file:/C:/Users/charl/Documents/NetBeansProjects/Fontys/Drawing.Domain/src/drawing/domain/Spline.java</file>
             <file>file:/C:/Users/charl/Documents/NetBeansProjects/Fontys/Drawing.Domain/test/drawing/domain/PolygonTest.java</file>
             <file>file:/C:/Users/charl/Documents/NetBeansProjects/Fontys/Drawing.Domain/test/drawing/domain/DrawingItemTest.java</file>
@@ -13,6 +14,7 @@
             <file>file:/C:/Users/charl/Documents/NetBeansProjects/Fontys/Drawing.Domain/test/drawing/domain/SplineTest.java</file>
             <file>file:/C:/Users/charl/Documents/NetBeansProjects/Fontys/Drawing.Domain/src/drawing/domain/Polygon.java</file>
             <file>file:/C:/Users/charl/Documents/NetBeansProjects/Fontys/Drawing.Domain/test/drawing/domain/ImageTest.java</file>
+            <file>file:/C:/Users/charl/Documents/NetBeansProjects/Fontys/Drawing.Domain/src/drawing/domain/DrawingItemComparator.java</file>
             <file>file:/C:/Users/charl/Documents/NetBeansProjects/Fontys/Drawing.Domain/src/drawing/domain/Oval.java</file>
             <file>file:/C:/Users/charl/Documents/NetBeansProjects/Fontys/Drawing.Domain/src/drawing/domain/Image.java</file>
             <file>file:/C:/Users/charl/Documents/NetBeansProjects/Fontys/Drawing.Domain/test/drawing/domain/DrawingTest.java</file>
