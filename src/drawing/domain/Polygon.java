@@ -46,6 +46,14 @@ public class Polygon extends DrawingItem {
     }
     
     /**
+     * Add a point to the vertices
+     * @param p the point to add
+     */
+    public void addPoint(Point p) {
+        vertices.add(p);
+    }
+    
+    /**
      * Override the default string output to provide a more meaningful output
      * @return 
      */

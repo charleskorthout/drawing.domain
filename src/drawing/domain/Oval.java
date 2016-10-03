@@ -10,7 +10,7 @@ package drawing.domain;
  * @author Charles Korthout
  */
 public class Oval extends DrawingItem {
-    private int weight;
+    private int height;
     private int width;
     
     /**
@@ -21,19 +21,19 @@ public class Oval extends DrawingItem {
     }
     
     /**
-     * Get the weight of the oval
-     * @return the weight of the oval
+     * Get the height of the oval
+     * @return the height of the oval
      */
-    public int getWeight() {
-        return weight;
+    public int getHeight() {
+        return height;
     }
 
     /**
-     * Set the weight of the oval
-     * @param weight the weight of the oval
+     * Set the height of the oval
+     * @param height the height of the oval
      */
-    public void setWeight(int weight) {
-        this.weight = weight;
+    public void setHeight(int height) {
+        this.height = height;
     }
 
     /**
@@ -58,7 +58,7 @@ public class Oval extends DrawingItem {
      */
     @Override
     public String toString(){
-        return String.format("class Oval; weight %d, width = %d, distance to origin %f ", this.weight, this.width, DrawingItem.distance(this));
+        return String.format("class Oval; height %d, width = %d, distance to origin %f ", this.height, this.width, DrawingItem.distance(this));
     }
     
     

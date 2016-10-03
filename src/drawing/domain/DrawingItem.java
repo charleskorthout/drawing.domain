@@ -12,7 +12,7 @@ import java.awt.*;
  */
 public class DrawingItem implements Comparable<DrawingItem>{
 
-    private Color color;
+    private Color color = Color.BLACK;
     private Point anchor;
     private DrawingItem previousState = null;
 
@@ -121,5 +121,5 @@ public class DrawingItem implements Comparable<DrawingItem>{
         int result = 17;
         result = 31 * result + this.getAnchor().hashCode();
         return result;
-    }
+    } 
 }

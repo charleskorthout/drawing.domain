@@ -20,6 +20,7 @@ public class PaintedText extends DrawingItem {
      */
     public PaintedText() {
         font = new Font("Arial", Font.BOLD, 12); 
+        content = "default content";
     }
 
     /**

@@ -11,7 +11,9 @@ package drawing.domain;
  */
 public class Image extends DrawingItem {
     private String file;
-    private int size;
+    private int width;
+    private int height;
+
     
     /**
      * Default constructor
@@ -37,20 +39,36 @@ public class Image extends DrawingItem {
     }
 
     /**
-     * get the file size of the image 
+     * get the file width of the image 
      * @return 
      */
-    public int getSize() {
-        return size;
+    public int getWidth() {
+        return width;
     }
 
     /**
-     * Set the size of an image
-     * @param size The size of the image 
+     * Set the width of an image
+     * @param width The width of the image 
      */
-     //TODO Does this make sense?? What is the purpoise of setting a file size here....
-    public void setSize(int size) {
-        this.size = size;
+     //TODO Does this make sense?? What is the purpoise of setting a file width here....
+    public void setWidth(int width) {
+        this.width = width;
+    }
+    
+    /**
+     * get the height of the image
+     * @return the height of the image
+     */
+    public int getHeight() {
+        return height;
+    }
+
+    /**
+     * Set the height of the image
+     * @param height the height of the image
+     */
+    public void setHeight(int height) {
+        this.height = height;
     }
     
     /**
@@ -59,7 +77,7 @@ public class Image extends DrawingItem {
      */
     @Override
     public String toString(){
-        return String.format("class Image; file = %s, sizew = %d, distance to source %f ", this.file, this.size, DrawingItem.distance(this));
+        return String.format("class Image; file = %s, sizew = %d, distance to source %f ", this.file, this.width, DrawingItem.distance(this));
     }
     
     /**

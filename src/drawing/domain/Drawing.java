@@ -4,6 +4,8 @@
  * and open the template in the editor.
  */
 package drawing.domain;
+import java.awt.Point;
+import static java.awt.SystemColor.text;
 import java.util.*;
 
 /**
@@ -88,6 +90,34 @@ public class Drawing {
             List list = this.drawingItems; //TODO must we keep the list sorted under pre/post change conditions???
             Collections.sort(list,comparator);
             return Collections.unmodifiableList(list);
+    }
+    
+    /**
+     * Draw a item 
+     * @param paintable 
+     */
+    public void paint(IPaintable paintable){
+        for (DrawingItem item : this.drawingItems) {
+            if (item instanceof Oval) paintable.paintOval((Oval)item);
+            if (item instanceof Image) paintable.paintImage((Image)item);
+            if (item instanceof PaintedText) paintable.paintText((PaintedText)item);
+            if (item instanceof Polygon) {
+                Polygon polygon = (Polygon)item;
+                Point start = polygon.getAnchor();
+                for (Point p : polygon.getVertices()) {
+                    paintable.paintLine(start, p, polygon.getWeight());
+                    start = p;
+                }
+            }
+            if (item instanceof Spline) {
+                Spline spline = (Spline)item;
+                Point start = spline.getAnchor();
+                for (Point p : spline.getPoints()){
+                    paintable.paintLine(start, p, spline.getWeight());
+                        start = p;
+                }
+            }                
+        }
     }
 }
 

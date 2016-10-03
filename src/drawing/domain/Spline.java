@@ -29,6 +29,13 @@ public class Spline extends DrawingItem{
     public java.util.List<Point> getPoints() {
         return Collections.unmodifiableList(points);
     }
+    /**
+     * Add a point to the list of points
+     * @param p thePoint to add
+     */
+    public void addPoint(Point p) {
+        points.add(p);
+    }
 
     /**
      * Get the weight of the spline
